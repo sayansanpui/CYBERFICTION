@@ -1,40 +1,17 @@
-@font-face {
-    font-family: font1;
-    src: url(./fonts/free-fa-solid-900.woff2);
-}
-
-@font-face {
-    font-family: Moranga;
-    src: url(./Fonts/moranga.ttf);
-}
-
-@font-face {
-    font-family: Gilroy;
-    src: url(./Fonts/Gilroy-Bold.otf);
-}
-
-@font-face {
-    font-family: Gilroy;
-    src: url(./Fonts/Gilroy-Semibold.otf);
-}
-
-@font-face {
-    font-family: Gilroy;
-    src: url(./Fonts/Gilroy-Medium.otf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: Gilroy;
 }
 
 html,
 body {
     height: 100%;
     width: 100%;
+    font-family: 'Urbanist', 'Noto Sans KR', sans-serif;
 }
 
 #nav {
@@ -50,8 +27,6 @@ body {
 }
 
 #nav>h3 {
-    font-family: Gilroy;
-    /* font-family: font1; */
     font-weight: 400;
     font-size: 22px;
 }
@@ -114,13 +89,12 @@ canvas {
     /* background-color: red; */
     font-size: 100px;
     white-space: nowrap;
-    font-family: Gilroy;
 }
 
 #loop>h1 {
     font-weight: 400;
     animation-name: anim;
-    animation-duration: 15s;
+    animation-duration: 20s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -141,21 +115,26 @@ canvas {
     }
 }
 
-#page>h3 {
+#page>p {
     position: absolute;
     top: 58%;
-    font-family: gilroy;
     font-weight: 400;
     color: #7c7c7c;
     left: 5%;
     z-index: 99;
 }
 
+#page>p:nth-child(3) {
+    position: absolute;
+    top: 58%;
+    right: 5%;
+    text-align: end;
+}
+
 #page>h4 {
     position: absolute;
     top: 65%;
-    left: 25%;
-    font-family: gilroy;
+    right: 5%;
     font-weight: 500;
     z-index: 99;
 }
@@ -163,10 +142,10 @@ canvas {
 #page1>#right-text {
     position: absolute;
     top: 30%;
-    left: 10%;
+    left: 5%;
 }
 
-#page1>#right-text>h3 {
+#page1>#right-text>p {
     font-weight: 400;
     color: #7c7c7c;
 }
@@ -179,7 +158,7 @@ canvas {
 #page1>#left-text {
     position: absolute;
     top: 50%;
-    right: 10%;
+    right: 5%;
     text-align: end;
 }
 
@@ -188,7 +167,7 @@ canvas {
     line-height: 1.5;
 }
 
-#page1>#left-text>h3 {
+#page1>#left-text>p {
     color: #7c7c7c;
     font-weight: 400;
 }
@@ -196,10 +175,10 @@ canvas {
 #page2>#text1 {
     position: absolute;
     top: 30%;
-    left: 10%;
+    left: 5%;
 }
 
-#page2>#text1>h3 {
+#page2>#text1>p {
     color: #7c7c7c;
     font-weight: 400;
 }
@@ -212,7 +191,7 @@ canvas {
 #page2>#text2 {
     position: absolute;
     top: 55%;
-    right: 10%;
+    right: 5%;
     text-align: end;
 }
 
@@ -223,17 +202,29 @@ canvas {
 
 #page3>#text3 {
     position: absolute;
-    top: 40%;
-    right: 10%;
+    top: 30%;
+    left: 5%;
+}
+
+#page3>#text3 p {
+    color: #7c7c7c;
+    font-weight: 400;
+    margin: 0.7rem 0;
+}
+
+#page3>#text4 {
+    position: absolute;
+    top: 50%;
+    right: 5%;
     text-align: end;
 }
 
-#page3>#text3>h3 {
+#page3>#text4>p {
     color: #7c7c7c;
     font-weight: 400;
 }
 
-#page3>#text3>h1 {
+#page3>#text4>h1 {
     font-size: 70px;
 
 }
