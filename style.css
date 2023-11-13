@@ -23,7 +23,7 @@ body {
     padding: 0px 30px;
     /* background-color: red; */
     position: fixed;
-    z-index: 999;
+    z-index: 500;
 }
 
 #nav>h3 {
