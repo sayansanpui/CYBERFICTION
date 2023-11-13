@@ -68,6 +68,7 @@ body {
 #main {
     position: relative;
     overflow: hidden;
+    background-color: #f3f3f3;
 }
 
 #page {
@@ -81,20 +82,20 @@ body {
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-color: #f3f3f3;
+    z-index: 99;
 }
 
 #page2 {
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-color: #f3f3f3;
+    z-index: 99;
 }
 
 #page3 {
     height: 100vh;
     width: 100vw;
-    background-color: #f3f3f3;
+    z-index: 99;
 }
 
 canvas {
@@ -142,19 +143,21 @@ canvas {
 
 #page>h3 {
     position: absolute;
-    top: 55%;
+    top: 58%;
     font-family: gilroy;
     font-weight: 400;
     color: #7c7c7c;
     left: 5%;
+    z-index: 99;
 }
 
 #page>h4 {
     position: absolute;
-    top: 62%;
+    top: 65%;
     left: 25%;
     font-family: gilroy;
     font-weight: 500;
+    z-index: 99;
 }
 
 #page1>#right-text {
